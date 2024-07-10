@@ -1,0 +1,116 @@
+h1{
+    text-align: center;
+}
+
+input{
+    border-radius: 5.5px;
+    border: 1.5px solid gray;
+    font-weight: 600;
+}
+
+input:focus{
+    outline: 2.5px solid #93c6ef;
+}
+
+label{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#signup-form {
+    margin: auto;
+    min-width: fit-content;
+    font-family: sans-serif;
+}
+
+#chk-label
+{
+    align-items: left;
+    min-width: fit-content;
+}
+
+.chk-container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.bluey{
+    background-color: #2a74b5;
+    font-weight: bold;
+    padding: 1.25px;
+    color: white;
+    border-radius: 5px;
+    padding-inline: 6px;
+}
+
+.blueB {
+    background-color: #2a74b5;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 12px;
+    width: 47vh;
+    border-style: none;
+    justify-content: center;
+}
+
+.blueB:hover {
+    background-color: #17436a;
+}
+
+.greenB {
+    background-color: #5ac75a;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 12px;
+    width: 47vh;
+    border-style: none;
+    justify-content: center;
+}
+
+.greenB:hover{
+    background-color: #3d873d;
+}
+
+.flex-c-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 19px;
+}
+
+.flex-i-row {
+    display: flex;
+    flex-grow: 1;
+    margin: 7px;
+    padding: 12px;
+}
+
+.flex-c-col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex-i-col {
+    padding: 12px;
+    margin: 7px;
+}
+
+@media (max-width: 768px) {
+    .flex-c-row{
+        flex-direction: column;
+        gap: 0.1px;
+    }
+
+    .flex-i-row{
+        max-width: 95vh;
+    }
+
+    .flex-i-col{
+        max-width: 95vh;
+    }
+    
+}

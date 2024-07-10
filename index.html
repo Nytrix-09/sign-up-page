@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Aj Dabas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+        <script src="script.js"></script>
+        
+        <section>
+                
+                <form id="signup-form" onsubmit="regisData();">
+                    
+                    <h1>Sign up</h1>
+                   
+                    <div class="flex-c-row">
+                    <input type="text" id="firstName" placeholder="First Name" class = "flex-i-row" required>
+                    <input type="text" id="lastName" placeholder="Last Name" class = "flex-i-row" required>
+                    </div>
+
+                    <div class="flex-c-col">
+                    <input type="tel" id="mobilePh" placeholder="Mobile No." class="flex-i-col" required>
+                    <input type="email" id="emailAd" placeholder="Email Address" class="flex-i-col" required>
+                    </div>
+
+                    <div class="flex-c-row">
+                    <input type="password" id="password" placeholder="Password" class="flex-i-row" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" class="flex-i-row" required>
+                    </div>
+
+                    <div class="flex-c-row">
+                        <div class="flex-i-row">
+                            <div class="chk-container">
+                                <input type="checkbox" id="agreement" class="flex-i-row" required>
+                                <label id="chk-label" for="agreement">I Agree</label>
+                            </div>
+                        </div>    
+                        
+                        <p class="flex-i-row">
+                            By clicking &nbsp; <span class="bluey">Register</span> &nbsp;, you agree to the &nbsp; <a href="./TermsAndConditions.html"> Terms and Conditions </a> &nbsp; set out by this site, including our Cookie Use.
+                        </p>
+                    </div>
+
+                    <div class="flex-c-row">
+                    <button id="register" class="flex-i-row blueB" type="submit">Register</button>
+                    <button id="signIn" class="flex-i-row greenB" type="button" onclick="existingUser();">Sign In</button>
+                    </div>
+            </form>
+        </section>
+    </body>
+</html>
